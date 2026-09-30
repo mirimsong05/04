@@ -2,19 +2,19 @@
 
 int main(void)
 {
-    int x, y, z, m;
-    int a, b, c;
+    int a, b;
 
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    printf("첫 번째 정수를 입력하세요: ");
+    scanf("%d", &a);
 
-    y = a*x*x + b*x + c;
-    m = (x+y+z) / 3;
+    printf("두 번째 정수를 입력하세요: ");
+    scanf("%d", &b);
 
-    printf("y=%d, m=%d\n", y, m);
+    printf("a + b = %d\n", a + b);
+    printf("a - b = %d\n", a - b);
+    printf("a * b = %d\n", a * b);
+    printf("a / b = %d\n", a / b);
+    printf("a %% b = %d\n", a % b);
 
     return 0;
 }
