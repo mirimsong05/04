@@ -2,14 +2,16 @@
 
 int main(void)
 {
-    char c;
+    int input_sec;
+    int min, sec;
 
-    printf("input an alphabet : ");
-    scanf("%c", &c);
+    printf("input seconds : ");
+    scanf("%d", &input_sec);
 
-    c = c + 1;
+    min = input_sec / 60;
+    sec = input_sec % 60;
 
-    printf("The next alphabet is %c\n", c);
+    printf("%d:%d\n", min, sec);
 
     return 0;
 }
