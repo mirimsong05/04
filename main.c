@@ -2,16 +2,15 @@
 
 int main(void)
 {
-    int input_sec;
-    int min, sec;
+    int year;
+    int result;
 
-    printf("input seconds : ");
-    scanf("%d", &input_sec);
+    printf("input a year : ");
+    scanf("%d", &year);
 
-    min = input_sec / 60;
-    sec = input_sec % 60;
+    result = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 
-    printf("%d:%d\n", min, sec);
+    printf("The result is : %d\n", result);
 
     return 0;
 }
