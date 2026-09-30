@@ -2,19 +2,14 @@
 
 int main(void)
 {
-    int a, b;
+    char c;
 
-    printf("첫 번째 정수를 입력하세요: ");
-    scanf("%d", &a);
+    printf("input an alphabet : ");
+    scanf("%c", &c);
 
-    printf("두 번째 정수를 입력하세요: ");
-    scanf("%d", &b);
+    c = c + 1;
 
-    printf("a + b = %d\n", a + b);
-    printf("a - b = %d\n", a - b);
-    printf("a * b = %d\n", a * b);
-    printf("a / b = %d\n", a / b);
-    printf("a %% b = %d\n", a % b);
+    printf("The next alphabet is %c\n", c);
 
     return 0;
 }
